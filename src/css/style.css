@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-#back{
+/* #back{
     background-image: url(../../public/img/coffee.webp)  ;
     position: absolute;
     z-index: -1;
@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(40%);
-}
+} */
 body {
     position: relative;
     border: 2px solid red;
@@ -36,4 +36,36 @@ body {
     padding: 40px;
 
     border: 1px solid white;
+}
+
+
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px ;
+}
+.formulario{
+    width: 80%; 
+    padding: 20px;
+}
+.formulario label {
+    display: block; 
+    margin: 5px; 
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="file"],
+.formulario input[list],
+.formulario datalist,
+.formulario textarea,
+.formulario select,
+.formulario button{ 
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 25px;
+    border: 1px solid maroon; 
 }
