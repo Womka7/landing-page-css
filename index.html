@@ -24,17 +24,17 @@
         <h1>Café - Riwi</h1>
         <nav class="nav">
             <ul>
-                <a href="#historia">Historia</a>
-                <a href="#tipos-cafe">Tipos</a>
-                <a href="#procesos">Procesos</a>
-                <a href="#recetas">Recetas</a>
-                <a href="#contacto">Contacto</a>
+                <a href="#historia"> <span>Historia </span></a>
+                <a href="#tipos-cafe"> <span>Tipos </span></a>
+                <a href="#procesos"> <span>Procesos </span></a>
+                <a href="#recetas"> <span>Recetas </span></a>
+                <a href="#contacto"> <span>Contacto </span></a>
             </ul>
         </nav>
     </header>
     <main>
         <div id="back"></div>
-        <section class="historia">
+        <section id="historia">
             <article>
                 <h3>Historia del Café</h3>
                 <div>
@@ -121,7 +121,7 @@
                 </div>
             </article>
         </section>
-        <section class="tipos-cafe">
+        <section id="tipos-cafe">
             <article>
                 <h3>Tipos de Café</h3>
                 <div>
@@ -286,17 +286,17 @@
                 </div>
             </article>
         </section>
-        <section class="procesos">
+        <section id="procesos">
             <article>
                 <h3>Procesos del Café</h3>
             </article>
         </section>
-        <section class="recetas">
+        <section id="recetas">
             <article>
                 <h3>Recetas con Café</h3>
             </article>
         </section>
-        <section class="contacto">
+        <section id="contacto">
             <h3><b>¡</b>Contáctanos<b>!</b></h3>
             <form action="" class="formulario" enctype="multipart/form-data">
                 <article>
@@ -343,14 +343,14 @@
                         <label for="type-solicitud">Tipo de servicio requerido</label>
                         <select name="servicios" id="type-solicitud" required>
                             <option disabled selected></option>
-                            <option value="enseña-receta">Enseñanza de recetas</option>  
-                            <option value="checkeo-cafe">Checkeo de tipo de café</option>  
-                            <option value="serivio-proceso">Procesos específico de café</option>  
+                            <option value="enseña-receta">Enseñanza de recetas</option>
+                            <option value="checkeo-cafe">Checkeo de tipo de café</option>
+                            <option value="serivio-proceso">Procesos específico de café</option>
                         </select>
                     </div>
                     <div>
                         <label for="archivo-form">Adjuntar archivo</label>
-                        <input type="file" name="file-doc" id="archivo-form" accept="*" >
+                        <input type="file" name="file-doc" id="archivo-form" accept="*">
                     </div>
                     <div>
                         <textarea placeholder="Comentarios" name="funcioneslaborales" id="funciones-empresa-user"
@@ -361,15 +361,25 @@
                     <div>
                         <label for="terminos-condiciones-user"><b>Términos y condiciones</b></label><br>
                         <div>
-                            <span class="terminos" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, modi quo! Quibusdam totam rerum sed sint quae, quia, et dolor praesentium, iste nihil corporis molestiae fugiat? Voluptates odit laborum ratione!
-                            In iste natus alias voluptatum, ipsa adipisci? Saepe aspernatur voluptate quod, illum quos illo sit commodi aperiam deserunt libero, ipsum odio nesciunt tenetur tempore velit alias fugiat fugit et laudantium?
-                            Suscipit beatae ea esse ipsam tempora iste, eos eius tempore totam nostrum non quam assumenda debitis, ullam magnam voluptatem iure aut blanditiis harum. Ratione quis beatae nemo molestias ipsa quo.
-                            Odio, modi! Laudantium magnam vitae perferendis consequatur, sit error atque, maxime amet illum aperiam voluptates, exercitationem earum quibusdam voluptatem numquam! Fuga quod rerum totam, blanditiis necessitatibus similique magni consequatur veniam?
-                            Quos impedit eaque voluptatem aliquid sapiente odio, vitae omnis ipsum qui asperiores molestias nisi hic, nobis repellendus cupiditate itaque exercitationem ipsa distinctio amet mollitia vel laborum facere. Nemo, excepturi quisquam.</span>
+                            <span class="terminos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+                                modi quo! Quibusdam totam rerum sed sint quae, quia, et dolor praesentium, iste nihil
+                                corporis molestiae fugiat? Voluptates odit laborum ratione!
+                                In iste natus alias voluptatum, ipsa adipisci? Saepe aspernatur voluptate quod, illum
+                                quos illo sit commodi aperiam deserunt libero, ipsum odio nesciunt tenetur tempore velit
+                                alias fugiat fugit et laudantium?
+                                Suscipit beatae ea esse ipsam tempora iste, eos eius tempore totam nostrum non quam
+                                assumenda debitis, ullam magnam voluptatem iure aut blanditiis harum. Ratione quis
+                                beatae nemo molestias ipsa quo.
+                                Odio, modi! Laudantium magnam vitae perferendis consequatur, sit error atque, maxime
+                                amet illum aperiam voluptates, exercitationem earum quibusdam voluptatem numquam! Fuga
+                                quod rerum totam, blanditiis necessitatibus similique magni consequatur veniam?
+                                Quos impedit eaque voluptatem aliquid sapiente odio, vitae omnis ipsum qui asperiores
+                                molestias nisi hic, nobis repellendus cupiditate itaque exercitationem ipsa distinctio
+                                amet mollitia vel laborum facere. Nemo, excepturi quisquam.</span>
                             <span>
                         </div>
-                            <input type="checkbox" name="aceptoterminos" id="terminos-condiciones-user" required
-                                value="Acepto">Acepto los terminos y condiciones
+                        <input type="checkbox" name="aceptoterminos" id="terminos-condiciones-user" required
+                            value="Acepto">Acepto los terminos y condiciones
                         </span>
                     </div>
                 </article>

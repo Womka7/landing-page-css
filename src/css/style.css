@@ -1,4 +1,15 @@
-:root {}
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Edu+QLD+Beginner:wght@400..700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+    --azul-oscuro: #181E4B;
+    --blanco: #FFFFFF;
+    --rosa-oscurito: #c594aa;
+    --rosa-medio: #fdcae1;
+    --rosa-claro: #ffe5f0;
+    --azul-oscurito: #171a4a;
+    --morado-medio: #2f2c79;
+}
 
 * {
     margin: 0px;
@@ -46,11 +57,13 @@ body {
     align-items: center;
     padding: 20px;
     margin: 20px ;
+
 }
 .formulario{
     width: 80%; 
     padding: 20px;
 }
+
 .formulario label {
     display: block; 
     margin: 5px; 
