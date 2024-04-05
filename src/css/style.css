@@ -6,7 +6,7 @@
     --blanco: #FFFFFF;
     --rosa-oscurito: #c594aa;
     --rosa-medio: #fdcae1;
-    --rosa-claro: #ffe5f0;
+    --mostaza: #f6a700;
     --azul-oscurito: #171a4a;
     --morado-medio: #2f2c79;
 }
@@ -17,16 +17,16 @@
     box-sizing: border-box;
 }
 
-/* #back{
-    background-image: url(../../public/img/coffee.webp)  ;
+#back{
+    background-image: url(../../public/img/2coffee.webp)  ;
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(40%);
-} */
+    filter: brightness(80%);
+}
 body {
     position: relative;
     border: 2px solid red;
@@ -37,9 +37,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
     padding: 5px 10px;
     position: static;
 
+
+}
+#logo-name{
+}
+#logoi{
+    position: relative;
+    top:-22px;
+    height: 90px;
+}
+
+#main{
+    margin-inline:10% ;
+    background-color: var(--mostaza);
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .historia {
@@ -81,4 +101,8 @@ body {
     margin-bottom: 10px; 
     border-radius: 25px;
     border: 1px solid maroon; 
+}
+
+footer{
+    width: 50px;
 }
