@@ -1,24 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Edu+QLD+Beginner:wght@400..700&display=swap');
+/* 
+    Nombre completo: Wendy Karina Pineda Parra
+    Clan: Clan Dell
+    Fecha: 5/04/2024 
+*/
+
+/* importacion de fuentes e iconos */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+/* variables de entorno */
 :root {
-    --azul-oscuro: #181E4B;
-    --blanco: #FFFFFF;
-    --rosa-oscurito: #c594aa;
-    --rosa-medio: #fdcae1;
+    --cafe: #502302;
+    --coffee-medio: #552d08;
+    --cafe-medio: #783e07;
+    --cafe-claro: #ae6515;
     --mostaza: #f6a700;
-    --azul-oscurito: #171a4a;
-    --morado-medio: #2f2c79;
+    --mostaza--oscurito: #f49d25;
+    --amarillo-claro: #ffe14b;
+    --rosa-salmon: #ff8658;
+    --rosa-cafe: #cd4c4a;
+    --rosa-oscurito: #c594aa;
+    --blanco: #faebd7;
 }
 
+/* restaurar valores por defecto navegadores */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Arvo", serif;
 }
 
-#back{
-    background-image: url(../../public/img/2coffee.webp)  ;
+body {
+    position: relative;
+}
+
+/* estilos de la barra de navegacion */
+.header {
+    background-color: var(--mostaza);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px;
+    color: var(--cafe);
+}
+
+.nav ul a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--cafe-medio);
+}
+
+.nav ul a i {
+    margin-right: 3px;
+    color: var(--coffee-medio);
+}
+
+.nav a:hover {
+    padding: 5px;
+    border: 2px solid var(--coffee-medio);
+    border-radius: 25px;
+}
+
+/* stilos de la imagen de la pagina de fondo */
+#back {
+    background-image: url(../../public/img/2coffee.webp);
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -27,67 +74,127 @@
     background-size: cover;
     filter: brightness(80%);
 }
-body {
+
+#logo-name img {
     position: relative;
-    border: 2px solid red;
-}
-
-.header {
-    background-color: antiquewhite;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    padding: 5px 10px;
-    position: static;
-
-
-}
-#logo-name{
-}
-#logoi{
-    position: relative;
-    top:-22px;
+    top: -22px;
     height: 90px;
 }
 
-#main{
-    margin-inline:10% ;
-    background-color: var(--mostaza);
+/* estilos y organizacion del main */
+#main {
+    margin-inline: 10%;
+    background-color: var(--cafe-claro);
+    opacity: 90%;
     height: calc(100vh - 100px);
     overflow-y: auto;
     -ms-overflow-style: none;
+
     &::-webkit-scrollbar {
         display: none;
     }
 }
 
-.historia {
-    color: antiquewhite;
+/* estilos para la seccion de historia */
+.img-historia,
+.tipos-cafe {
+    color: var(--blanco);
     padding: 40px;
-
-    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
 }
 
-
-
-.contacto{
+.titulos {
     display: flex;
+    justify-content: center;
+    font-size: 180%;
+}
+
+.contenedor-ih {
+    width: 50%;
+}
+
+#parrafo1 {
+    width: 50%;
+    font-size: larger;
+}
+
+.contenedor-ih img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    height: 400px;
+}
+
+/* stilos para la seccion de tipos de cafe */
+.type-text {
+    width: 50%;
+    font-size: medium;
+}
+
+.type-text div p b,
+.proceso-cafe div p b {
+    color: var(--cafe);
+}
+
+.type-img {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.type-img img {
+    width: 33%;
+    border-radius: 50px;
+}
+
+/* stilos para la seccion de procesos */
+.proceso-cafe {
+    color: var(--blanco);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.proceso-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.proceso-img img {
+    width: 40%;
+    border-radius: 20px;
+}
+
+/* stilos para el formulario de contatco y la ubicacion */
+#contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin: 20px ;
+    margin: 20px;
 
 }
-.formulario{
-    width: 80%; 
+
+
+.formulario {
+    width: 80%;
     padding: 20px;
 }
 
 .formulario label {
-    display: block; 
-    margin: 5px; 
+    display: block;
+    margin: 5px;
 }
+
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario input[type="file"],
@@ -95,14 +202,39 @@ body {
 .formulario datalist,
 .formulario textarea,
 .formulario select,
-.formulario button{ 
+.formulario button {
     width: 100%;
-    padding: 10px; 
-    margin-bottom: 10px; 
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 25px;
-    border: 1px solid maroon; 
+    border: 1px solid var(--cafe-medio);
 }
 
-footer{
-    width: 50px;
+.terminos div div span {
+    font-size: xx-small;
+    text-align: center;
+}
+
+/* stilos para el footer */
+.footer {
+    width: 100%;
+    background-color: var(--mostaza);
+    color: var(--cafe);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+
+}
+
+.final-parte {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.redes ul a i {
+    color: var(--cafe);
+    padding: 10px;
 }
