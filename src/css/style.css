@@ -69,7 +69,7 @@ body {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(80%);
@@ -158,8 +158,14 @@ body {
     align-items: center;
     text-align: center;
     gap: 20px;
+    width: 100%;
 }
-
+.video{
+    width: 50%;
+}
+.procesoos{
+    width: 50%;
+}
 .proceso-img {
     width: 100%;
     display: flex;
@@ -223,7 +229,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
 
 }
 
